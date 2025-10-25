@@ -55,7 +55,7 @@ const Screen = () => {
 const TabButton = ({ id, label, activeTab, setActiveTab }) => {
   const isActive = activeTab === id;
 
-  const activeClasses = 'bg-black text-white shadow-lg';
+  const activeClasses = 'bg-black text-white shadow-lg shadow-zinc-900';
   const inactiveClasses = 'text-gray-400 hover:text-gray-200 hover:bg-gray-700/50';
 
   return (
