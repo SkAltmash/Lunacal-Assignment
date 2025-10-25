@@ -21,13 +21,13 @@ const Gallery = () => {
 
     const handleNext = () => {
         if (hasMoreImagesRight) {
-            setCurrentIndex(prevIndex => prevIndex + 3);
+            setCurrentIndex(prevIndex => prevIndex + 1);
         }
     };
 
     const handlePrev = () => {
         if (hasMoreImagesLeft) {
-            setCurrentIndex(prevIndex => prevIndex - 3);
+            setCurrentIndex(prevIndex => prevIndex - 1);
         }
     };
 
@@ -62,8 +62,8 @@ const Gallery = () => {
         <div className="max-w-xl flex mx-auto p-4 rounded-xl shadow-2xl w-[720px]  h-[316px] bg-[#363C43]">
 
             <div className="flex flex-col items-center justify-between h-[159.69px] p-2 mr-4 rounded-lg bg-custom-gradient">
-                <FaQuestionCircle className="text-white w-6 h-6" />
-                <FaTh className="text-white w-6 h-6" />
+                <FaQuestionCircle className="text-[#4A4E54] w-6 h-6" />
+                <FaTh className="text-[#4A4E54] w-6 h-6" />
             </div>
 
             <div className="flex flex-col flex-grow ">
@@ -95,7 +95,7 @@ const Gallery = () => {
                             {/* Left Arrow Button */}
                             <div
                                 onClick={handlePrev}
-                                className={`w-10 h-10 rounded-full flex items-center justify-center bg-[#4A4E54] cursor-pointer 
+                                className={`w-10 h-10 rounded-full flex items-center justify-center bg-[#161718] cursor-pointer 
                                     ${hasMoreImagesLeft ? 'opacity-100 [box-shadow:inset_3px_3px_5px_#2c2f33,inset_-3px_-3px_5px_#686e75]' : 'opacity-40 cursor-default'}`}
                             >
                                 <FaArrowLeft className="text-white w-4 h-4" />
@@ -103,7 +103,7 @@ const Gallery = () => {
                             {/* Right Arrow Button */}
                             <div
                                 onClick={handleNext}
-                                className={`w-10 h-10 rounded-full flex items-center justify-center bg-[#4A4E54] cursor-pointer 
+                                className={`w-10 h-10 rounded-full flex items-center justify-center bg-[#161718] cursor-pointer 
                                     ${hasMoreImagesRight ? 'opacity-100 [box-shadow:inset_3px_3px_5px_#2c2f33,inset_-3px_-3px_5px_#686e75]' : 'opacity-40 cursor-default'}`}
                             >
                                 <FaArrowRight className="text-white w-4 h-4" />
@@ -115,7 +115,7 @@ const Gallery = () => {
                 {/* === IMAGE GRID === */}
                 <div className="w-[500px] overflow-x-scroll no-scrollbar custom-scrollbar h-[200px]">
                     <div
-                        className="flex transition-transform duration-300 space-x-4 h-[250px] p-5"
+                        className="flex transition-transform duration-300 space-x-4  pt-5 px-3"
                         style={{ transform: `translateX(-${(currentIndex * 100) / 3}%)` }}
                     >
                         {images.map((img, index) => (
