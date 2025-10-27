@@ -10,9 +10,12 @@ function App() {
       </div>
 
       {/* Right side (blue) – full width on mobile, half on large screens */}
-      <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-5 gap-5">
+      <div className="w-full md:w-[60%] flex flex-col justify-center align-middle  p-4 gap-2">
         <Screen />
+        <div className='w-[70%] h-1 m-auto bg-zinc-700'></div>
         <Gallery />
+        <div className='w-[70%] h-1 m-auto bg-zinc-700'></div>
+
       </div>
     </div>
   );
