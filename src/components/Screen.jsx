@@ -25,8 +25,8 @@ const Screen = () => {
                 className={`
                   flex-1 p-4 cursor-pointer text-center transition-colors duration-300 relative z-10
                   ${activeTab === index
-                    ? 'text-white font-semibold rounded-2xl'
-                    : 'text-zinc-40 hover:text-white/80 group'
+                    ? 'text-white font-semibold rounded-2xl  shadow-md shadow-zinc-900'
+                    : 'text-zinc-400 hover:text-white/80 group'
                   }
                 `}
               >

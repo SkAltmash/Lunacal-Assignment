@@ -121,7 +121,7 @@ const Gallery = () => {
                         {images.map((img, index) => (
                             <div
                                 key={index}
-                                className="group  w-[160px] h-[160px] flex-shrink-0 rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)] bg-gray-900"
+                                className="group  w-[150px] h-[160px] flex-shrink-0 rounded-xl shadow-[0_0_15px_rgba(0,0,0,0.5)] bg-gray-900"
                             >
                                 <img
                                     src={img}
